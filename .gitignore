@@ -1,5 +1,5 @@
 venv/
-.env/
+.env
 # Protección de datos, no subir archivos al repositorio público
 bronze/
 silver/
