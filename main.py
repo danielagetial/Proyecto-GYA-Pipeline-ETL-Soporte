@@ -27,9 +27,7 @@ def main ():
     df_extraido_encuestas = datos.extraer_datos(config['sources']['encuesta_soporte']['path'])
     df_extraido_jira = datos_csv.extraer_datos(config['sources']['jira']['path'])
     df_extraido_maestro_clientes = datos.extraer_datos(config['sources']['maestro_clientes']['path'])
-    #print(df_extraido_encuestas)
-    #print(df_extraido_jira)
-    #print(df_extraido_maestro_clientes)
+
 
     #TRANSFORMACIÓN
     with open(ruta_log, "a", encoding="utf-8") as file:
@@ -37,13 +35,10 @@ def main ():
 
     df_transformado_encuestas = transform.limpiar_datos(df=df_extraido_encuestas,df_maestro=df_extraido_maestro_clientes)
     df_transformado_jira = transform_csv.limpiar_datos_csv(df_extraido_jira)
-    #print(df_transformado_encuestas)
-    #print(df_transformado_jira)
+ 
 
     df_gold = gold.gold_data(df_transformado_jira, df_transformado_encuestas)
-    #print(df_gold)
-    #archivo_salida = "RESULTADO_CRUCE.xlsx"
-    #df_gold.to_excel(archivo_salida, index=False)
+ 
 
     #CARGA DE DATOS (LOAD)
     with open(ruta_log, "a", encoding="utf-8") as file:
