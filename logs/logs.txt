@@ -1,0 +1,7 @@
+2026-10-06 16:51:42.694533-INFO:-Iniciando la extracción
+2026-10-06 16:51:43.208932-INFO:-Iniciando la transformación
+2026-10-06 16:51:43.702657-INFO:-Iniciando la carga
+2026-10-06 17:00:06.965010-INFO:-Iniciando la extracción
+2026-10-06 17:00:07.548682-INFO:-Iniciando la transformación
+2026-10-06 17:00:08.138860-INFO:-Iniciando la carga
+2026-10-06 17:00:30.328358-INFO:-Proceso ETL finalizado con éxito

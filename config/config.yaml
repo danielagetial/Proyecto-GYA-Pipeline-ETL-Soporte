@@ -1,0 +1,33 @@
+project:
+  name: Proyecto Final GYA
+  version: 1.0
+  description: Desarrollo de un pipeline de datos ETL enfocado en solucionar la dispersión de datos de soporte operacional. Extrae reportes planos de Jira y encuestas de SharePoint, transforma y limpia variables clave y disponibiliza datos estructurados para evaluar el cumplimiento de ANS, productividad y causas frecuentes de incidencias.
+  author: Daniela Getial - Cindy Suarez - Daniel Arciniegas
+  license: MIT
+  repository: https://github.com/danielagetial/Proyecto-GYA-Pipeline-ETL-Soporte
+  date: 2026-10-02
+
+paths:
+  data_dir: data
+  bronze_dir: data/bronze
+  silver_dir: data/silver
+  gold_dir: data/gold
+  logs_dir: logs
+  notebooks_dir: notebooks
+
+
+sources:
+  jira:
+    path: data/bronze/Jira.csv
+    file_name: Jira.csv
+    file_type: csv
+
+  encuesta_soporte:
+    path: data/bronze/encuesta_soporte.xlsx
+    file_name: encuesta_soporte.xlsx
+    file_type: xlsx
+
+  maestro_clientes:
+    path: data/bronze/maestro_clientes.xlsx
+    file_name: maestro_clientes.xlsx
+    file_type: xlsx

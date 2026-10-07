@@ -1,0 +1,10 @@
+venv/
+.env/
+# Protección de datos, no subir archivos al repositorio público
+bronze/
+silver/
+gold/
+
+# Ignorar todas las carpetas __pycache__ y su contenido
+**/__pycache__/
+*.pyc
